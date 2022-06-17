@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Public+Sans:regular,700&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Public+Sans:regular,500,600,700,800,900&display=swap);
 * {
   padding: 0px;
   margin: 0px;
@@ -120,22 +120,35 @@ h6 {
   top: 0;
   left: 0;
   background-color: rgba(75, 75, 75, 0.685);
+  overflow: auto;
+  padding-top: 80px;
+}
+@media (min-width: 76.25em) {
+  .welcome-modal {
+    padding-top: 130px;
+  }
+}
+@media (min-width: 61.99875em) {
+  .welcome-modal {
+    padding-top: 108px;
+  }
 }
 .welcome-modal__wrapper {
-  position: fixed;
-  width: 100%;
   background-color: #fff;
-  overflow: auto;
-  max-height: 90%;
+  position: relative;
   bottom: 0;
   left: 0;
+  min-height: 100%;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .welcome-modal__content {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   padding: 50px 0;
-  overflow: auto;
   align-items: center;
   justify-content: center;
 }
@@ -220,6 +233,26 @@ h6 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+@media (min-width: 25.5em) {
+  .welcome-modal__pay-block {
+    display: block;
+  }
+}
+@media (min-width: 61.99875em) {
+  .welcome-modal__pay-block {
+    display: flex;
+  }
+}
+@media (min-width: 47.99875em) {
+  .welcome-modal__pay-block {
+    display: flex;
+  }
+}
+@media (min-width: 29.99875em) {
+  .welcome-modal__pay-block {
+    display: flex;
+  }
 }
 .welcome-modal__pay-block > :last-child {
   margin-bottom: 0;
